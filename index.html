@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Lexend+Deca&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./tailwind/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Stats preview card component</title>
+
+    <style>
+        body {
+            font-family: Inter;
+        }
+        
+        .fontt {
+            font-family: Lexend Deca;
+            font-size: small;
+            font-weight: normal;
+            color: hsla(0, 0%, 100%, 0.6);
+        }
+        
+        .para {
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body class="bg-[#090b1a] text-white flex sm:flex-row flex-col  justify-center items-center h-screen">
+    <!-- CARD -->
+    <div class="bg-[#1b1938] sm:w-[56rem] sm:h-[22rem] sm:flex-row w-[20.5rem] flex flex-col justify-center items-center rounded-lg gap-6">
+
+
+        <!-- Image-Box -->
+        <div class="sm:order-2 relative w-full sm:h-full h-62">
+            <!-- Image Overlay -->
+            <div class="sm:rounded-r-lg sm:rounded-none absolute bg-purple-900 w-full h-full opacity-60 rounded-t-lg"></div>
+
+            <!-- Image -->
+            <div class="sm:w-full sm:h-full w-[20.5rem]">
+                <img class="sm:rounded-r-lg  sm:rounded-none w-full h-full rounded-t-lg" src="images/image-header-mobile.jpg " alt=" Women working in office" />
+            </div>
+        </div>
+
+        <!-- Text -->
+        <div class="sm:order-1 sm:mx-16 sm:gap-0 text-center flex flex-col gap-4">
+
+            <!-- Heading -->
+            <div class="sm:mb-4 sm:px-0 sm:leading-0 text-[27px] font-bold px-6 leading-8">
+                Get <span class="text-[#aa5cdb]">insights</span> that help your business grow.
+            </div>
+
+            <!-- Discription-->
+            <div class="sm:text-xs sm:mb-8 sm:px-0 text-[.9rem] px-9 mb-3">
+                Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+            </div>
+
+            <!-- Footer -->
+            <div class="sm:flex-row sm:gap-6 text-xl font-bold flex flex-col mb-4 gap-2">
+                <div class="flex flex-col">
+                    <span>10k+</span> <span class="fontt ">COMPANIES</span>
+                </div>
+                <div class="flex flex-col">
+                    <span>314</span> <span class="fontt">TEMPLATES</span>
+                </div>
+                <div class="flex flex-col">
+                    <span>12M+</span> <span class="fontt">QUERIES</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
